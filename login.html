@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Banking Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body  >
+    <header>
+        <h1>TRANSFER MONEY THROUGH YOUR ID </h1>
+    </header>
+    <section class="content">
+        <h2>Please log in to continue</h2>
+        <form id="login-form" onsubmit="validateLogin(event)">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <a href="dashboard.html" class="btn">Login</a>
+        </form>
+        <p id="error-message" style="color: red;"></p>
+    </section>
+    <footer>
+        <p>&copy; 2024 Banking Management System</p>
+    </footer>
+    <script src="scripts.js"></script>
+    
+</body>
+</html>
